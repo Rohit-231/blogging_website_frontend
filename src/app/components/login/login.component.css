@@ -1,0 +1,13 @@
+*{
+  background-color: rgb(255, 255, 255);
+}
+
+.loginForm{
+  border:solid 2px rgba(0, 0, 0, 0.482);
+  background-color: rgba(0, 0, 0, 0.032);
+  width: 40%;
+  margin:auto auto;
+  padding: 20px 40px;
+  border-radius: 4%;
+
+}

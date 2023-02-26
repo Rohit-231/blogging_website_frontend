@@ -1,5 +1,11 @@
 *{
-  background-color: rgba(219, 219, 36, 0.712);
+  background-color: rgb(235, 235, 235);
+  width:100%;
+}
+
+.main-header{
+  display :grid;
+  grid-template-columns: 4fr 1fr;
 }
 
 .header{
@@ -8,7 +14,10 @@
   padding: 100px auto;
   font-size: x-large;
   text-decoration: none;
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.menu{
+  
+}
