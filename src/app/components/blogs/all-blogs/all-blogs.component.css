@@ -12,15 +12,14 @@ body{
 .blog-list{
   padding:5px 5px;
   row-gap: 10px;
-  /* background-color: antiquewhite; */
-  
+  background-image:linear-gradient(rgba(0, 0, 0, 0.336),rgba(244, 239, 239, 0.105));
 
 }
 
 .author-detail{
   display: grid;
   grid-template-columns: 1fr 1fr 8fr;
-  background-color: rgb(229, 229, 229);
+  /* background-color: rgb(229, 229, 229); */
   /* justify-content:start; */ 
   
 }
@@ -36,11 +35,12 @@ body{
   /* margin: 10px; */
   gap: 3%;
   cursor:pointer;
-  background-color: rgba(229, 229, 229, 0.532);
+  /* background-color: rgba(229, 229, 229, 0.532); */
 
 }
 .blog-pic{
   padding:5% 5%;
+  width:60%
 }
 
 
