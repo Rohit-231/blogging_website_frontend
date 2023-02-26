@@ -1,36 +1,53 @@
 
+body{
+  background-color: rgba(229, 229, 229, 0.048);
+}
 .blog{
-  width:80%;
+  width:90%;
   margin:10px auto;
+  row-gap: 10px;
+
 }
 
 .blog-list{
   padding:5px 5px;
+  row-gap: 10px;
+  /* background-color: antiquewhite; */
+  
+
 }
 
 .author-detail{
   display: grid;
   grid-template-columns: 1fr 1fr 8fr;
+  background-color: rgb(229, 229, 229);
   /* justify-content:start; */ 
+  
 }
 .author-pic{
   height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
 
 .blog-content{
-  background-color: rgb(255, 255, 255);
   display: grid;
   grid-template-columns: 7fr 3fr;
   /* margin: 10px; */
   gap: 3%;
   cursor:pointer;
+  background-color: rgba(229, 229, 229, 0.532);
+
 }
 .blog-pic{
-  padding:0% 0%;
+  padding:5% 5%;
 }
 
 
-.blog-list{
-  border-bottom: 1px solid  rgba(0, 0, 0, 0.292);
-  
+
+.blog-action{
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+  background-color: rgba(229, 229, 229, 0.175);
+
 }

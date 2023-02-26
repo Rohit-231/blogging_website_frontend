@@ -4,7 +4,7 @@
   <div class="blog-list" *ngFor="let b of allBlog">
     <div class="author-detail">
       <img src={{b.author_pic}} alt="pic of author" class="author-pic">
-      <p> {{b.author_name}} . </p>
+      <p> {{b.author_name}}.</p>
       <p>{{b.created_at | date:'yyyy'}} - {{b.created_at | date:'MM'}}- {{b.created_at | date:'dd'}}</p>
     </div>
 
@@ -22,12 +22,13 @@
       </div>
     </div>
 
-    <div class="blog-actions"></div>
+    <div class="blog-action">
       <p>{{b.duration}} minutes read</p>
      <p>🔖Bookmark</p>
+    </div>
   </div>
+  <br> <br>
 </div>
-  <p>abc</p>
 
 
 <!-- 
