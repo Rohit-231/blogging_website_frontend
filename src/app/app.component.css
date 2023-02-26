@@ -1,0 +1,14 @@
+*{
+  background-color: rgba(219, 219, 36, 0.712);
+}
+
+.header{
+  /* background-color: aqua; */
+  width: 100%;
+  padding: 100px auto;
+  font-size: x-large;
+  text-decoration: none;
+  color: aliceblue;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+

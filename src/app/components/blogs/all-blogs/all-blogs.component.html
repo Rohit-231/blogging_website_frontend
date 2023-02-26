@@ -1,0 +1,32 @@
+<p>all-blogs works!123</p>
+
+<div class="blog-detail">
+  <div class="blog" *ngFor="let b of allBlog">
+    <div class="blog-text">
+
+      <!-- <p>{{b.id}}</p> -->
+      <strong><p>{{b.title}}</p></strong>
+      <p>{{b.created_at | date:'yyyy'}} - {{b.created_at | date:'MM'}}- {{b.created_at | date:'dd'}}</p>
+      <p> by {{b.author_name}}</p>
+      <p>{{b.duration}} minutes</p>
+    </div>
+    <div class="blog-pic">
+
+      <img src="https://media.istockphoto.com/id/1402667894/photo/energy-lecture-screen.jpg?s=612x612&w=is&k=20&c=iy88BKxREEN47VP5wzWV-nl6t_HzXXEt463X7H1r0WA=" alt="image" 
+      width=100% 
+      >
+    </div>
+    <!-- <p>{{b.body_content}}</p> -->  
+  </div>
+</div>
+  <p>abc</p>
+
+
+<!-- 
+id?:number;
+  created_at:string;
+  title:string;
+  author_name:string;
+  author_pic?:string;
+  duration:number;
+  body_content:string; -->
