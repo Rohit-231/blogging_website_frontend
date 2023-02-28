@@ -8,7 +8,7 @@
   grid-template-columns: 4fr 1fr;
   background-image: linear-gradient(to right,rgb(255, 255, 255),rgba(0, 149, 255, 0.611));
   padding: 1% 1%;
-  margin: 1%;
+  margin: 0%;
   border-bottom: solid black 2px;
 }
 
@@ -20,6 +20,23 @@
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu{
+  background-color: #b9d8ff;
+  padding: 0.5% 1%;
+  width: 100%;
+  text-align: center;
+}
+.menu a{
+  text-decoration: none;
+  font-size: large;
+  margin: 0 2%;
+  color: rgb(115, 1, 1);
+  padding: 4% 2%;
+  /* text-align: left; */
+
+
 }
 
 .login{
