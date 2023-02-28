@@ -23,16 +23,17 @@
 }
 
 .menu{
-  background-color: #b9d8ff;
+  background-color: rgb(240, 240, 240);
   padding: 0.5% 1%;
   width: 100%;
   text-align: center;
+  font-weight: 545;
 }
 .menu a{
   text-decoration: none;
   font-size: large;
   margin: 0 2%;
-  color: rgb(115, 1, 1);
+  color: rgb(0, 110, 161);
   padding: 4% 2%;
   /* text-align: left; */
 
