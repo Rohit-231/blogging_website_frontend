@@ -6,17 +6,47 @@
 .main-header{
   display :grid;
   grid-template-columns: 4fr 1fr;
-  background-image: linear-gradient(to bottom right,rgb(30, 151, 238),rgba(124, 167, 237, 0.741));
-
+  background-image: linear-gradient(to right,rgb(255, 255, 255),rgba(0, 149, 255, 0.611));
+  padding: 1% 1%;
+  margin: 1%;
+  border-bottom: solid black 2px;
 }
 
 .header{
   /* background-color: aqua; */
   width: 100%;
-  padding: 100px auto;
+  padding: 1% 0%;
   font-size: x-large;
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.login{
+  background-color: rgb(245, 195, 131);
+  padding: 2% 3%;
+  margin-top: 1%;
+  border-radius: 10%;
+  text-decoration: none;
+  font-size: larger;
+}
+.signup{
+  background-color: rgb(245, 195, 131);
+  padding: 2% 3%;
+  margin-top: 1%;
+  border-radius: 10%;
+  text-decoration: none;
+  font-size: larger;
+
+}
+
+.main-header-tagline{
+  text-decoration: none;
+  font-family:'Times New Roman', Times, serif;
+  font-size: xxx-large;
+  font-weight: 700;
+}
+.tagline{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+}

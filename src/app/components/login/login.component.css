@@ -3,11 +3,11 @@
 }
 
 .loginForm{
-  border:solid 2px rgba(0, 0, 0, 0.482);
-  background-color: rgba(0, 0, 0, 0.032);
+  border:solid 2px rgba(0, 0, 0, 0.341);
   width: 40%;
   margin:auto auto;
   padding: 20px 40px;
-  border-radius: 4%;
+  border-radius: 1%;
+  box-shadow: 2px 2px rgb(190, 190, 190);
 
 }

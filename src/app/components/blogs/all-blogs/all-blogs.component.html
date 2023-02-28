@@ -1,37 +1,52 @@
 
-
-<div class="blog">
-  <div class="blog-list" *ngFor="let b of allBlog">
-    <div class="author-detail">
-      <img src={{b.author_pic}} alt="pic of author" class="author-pic">
-      <p> {{b.author_name}}.</p>
-      <p>{{b.created_at | date:'yyyy'}} - {{b.created_at | date:'MM'}}- {{b.created_at | date:'dd'}}</p>
-    </div>
-
-    <div class="blog-content">
-      <div class="blog-text">
-        <strong><p>{{b.title}}</p></strong>
-        <p>{{b.body_content | slice:0:240}}...
-        </p>
+<div class="blog-page">
+  <div class="blog">
+    <div class="blog-list" *ngFor="let b of allBlog">
+      <div class="author-detail">
+        <img src={{b.author_pic}} alt="pic of author" class="author-pic">
+        <p> {{b.author_name}}.</p>
+        <p>{{b.created_at | date:'yyyy'}} - {{b.created_at | date:'MM'}}- {{b.created_at | date:'dd'}}</p>
       </div>
 
-      <div class="blog-pic">
-        <img src={{b.main_pic}} alt="image" 
-        width=100% 
-        >
+      <div class="blog-content">
+        <div class="blog-text">
+          <strong><p>{{b.title}}</p></strong>
+          <p>{{b.body_content | slice:0:240}}...
+          </p>
+        </div>
+
+        <div class="blog-pic">
+          <img src={{b.main_pic}} alt="image" 
+          width=100% 
+          >
+        </div>
       </div>
+
+      <div class="blog-action">
+        <p>{{b.duration}} minutes read</p>
+      <p>🔖Bookmark</p>
+      </div>
+      <br>
     </div>
 
-    <div class="blog-action">
-      <p>{{b.duration}} minutes read</p>
-     <p>🔖Bookmark</p>
-    </div>
-    <br><br><br>
+    
+    <br> <br>
   </div>
-  <br> <br>
+
+  <div class="newsletter">
+    <div class="newsletter-main">
+    <p class="subscribe">Subscribe</p>
+    <p>I want to receive latest blogs and get discount updates</p>
+    <label for="">Name*</label> <br>
+    <input type="text" placeholder="Akash" required><br> <br>
+
+    <label for="">Email*</label> <br>
+    <input type="text" placeholder="akash@email.com" required><br><br>
+
+    <button class="join">Join ThoughtsQueue</button>
+  </div>
+  </div>
 </div>
-
-
 <!-- 
 id?:number;
   created_at:string;

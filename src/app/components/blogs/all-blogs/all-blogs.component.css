@@ -2,17 +2,25 @@
 body{
   background-color: rgba(229, 229, 229, 0.048);
 }
+.blog-page{
+  
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
 .blog{
-  width:90%;
+  width:80%;
   margin:10px auto;
   row-gap: 10px;
+
 
 }
 
 .blog-list{
   padding:5px 5px;
   row-gap: 10px;
-  background-image:linear-gradient(rgba(0, 179, 255, 0.575),rgba(255, 255, 255, 0.105));
+  border-top: 1px rgba(0, 0, 0, 0.184) solid;
+  /* background-image:linear-gradient(to right,rgba(235, 235, 235, 0.575),rgba(255, 255, 255, 0.105)); */
+  /* box-shadow:10px 10px rgba(0, 0, 0, 0.285) ; */
 
 }
 
@@ -48,5 +56,34 @@ body{
 .blog-action{
   display: grid;
   grid-template-columns: 1fr  1fr;
+
+}
+
+.newsletter{
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-main{
+  border:solid rgba(0, 0, 0, 0.264) 2px;
+  padding: 4% 4%;
+  box-shadow: 2px 2px gray;
+}
+
+.join{
+  background-color: orangered;
+  font-size: medium;
+  color: white;
+  padding: 2% 2%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5%;
+  font-weight: 600;
+}
+.subscribe{
+  font-size:xx-large;
+  font-weight: 600;
+
+
 
 }
