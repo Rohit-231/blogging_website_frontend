@@ -1,1 +1,35 @@
-<p>signup works!</p>
+
+<form (submit)="onFormSubmit()" [formGroup]="signupForm" class="signupForm">
+
+  <label for="name">Enter Name:</label> <br>
+  <input type="text" placeholder="akash" id="name" name="name" formControlName="name">
+  <span *ngIf="signupForm.controls['name'].invalid && signupForm.controls['name'].touched">
+    <span *ngIf="signupForm.controls['name'].errors['required']">Name is required</span>
+  </span>
+  <br><br>
+
+  <label for="email_id">Enter Email:</label> <br>
+  <input type="email" placeholder="akash@email.com" id="email_id" name="email" formControlName="email">
+  <span *ngIf="signupForm.controls['email'].invalid && signupForm.controls['email'].touched">
+    <span *ngIf="signupForm.controls['email'].errors['required']">Email is required</span>
+  </span>
+  <br><br>
+
+  <label for="password">Enter Password:</label> <br>
+  <input type="password" placeholder="***" name="password" formControlName="password">
+  <span *ngIf="signupForm.controls['password'].invalid && signupForm.controls['password'].touched">
+    <span *ngIf="signupForm.controls['password'].errors['required']">Password is required</span>
+  </span>
+  <br><br>
+
+  <label for="passwordConfirm">Confirm Password:</label> <br>
+  <input type="password" placeholder="***" name="passwordConfirm" formControlName="passwordConfirm">
+  <span *ngIf="signupForm.controls['passwordConfirm'].invalid && signupForm.controls['passwordConfirm'].touched">
+    <span *ngIf="signupForm.controls['passwordConfirm'].errors['required']">Password is required</span>
+  </span>
+  <br><br>
+
+  <input type="submit" value="Sign Up" [disabled]="!signupForm.valid">
+  
+</form>
+

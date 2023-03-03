@@ -8,13 +8,17 @@ import { AllBlogsComponent } from './components/blogs/all-blogs/all-blogs.compon
 import {HttpClientModule} from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { CreateBlogComponent } from './components/blogs/create-blog/create-blog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AllBlogsComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    DashboardComponent,
+    CreateBlogComponent
   ],
   imports: [
     BrowserModule,

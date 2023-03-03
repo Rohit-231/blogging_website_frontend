@@ -1,0 +1,19 @@
+.dashboard{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.profile-details{
+  border-right: solid 1px gray;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(0, 170, 255, 0.466);
+}
+
+.profile-pic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}

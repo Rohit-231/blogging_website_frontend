@@ -1,6 +1,6 @@
 export class Blog{
   id?:number;
-  created_at:Date;
+  created_at?:Date;
   title:string;
   main_pic?:string;
   author_name:string;

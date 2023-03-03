@@ -1,0 +1,54 @@
+<!-- <p>create-blog works!</p> -->
+<h1>Creating Blog...</h1>
+
+<br>
+
+<form (submit)="onFormSubmit()" [formGroup]="newBlogForm" class="newBlogForm">
+
+  <label for="">Title :</label> <br>
+  <textarea name="title" id="title" cols="50" rows="2" formControlName="title"></textarea>
+  <span *ngIf="newBlogForm.controls['title'].invalid && newBlogForm.controls['title'].touched">
+    <span *ngIf="newBlogForm.controls['title'].errors['required']">title' is required</span>
+  </span>
+  <br><br>
+
+  <label for="">Blog's pic link</label> <br>
+  <textarea name="main_pic" id="main_pic" cols="50" rows="2" formControlName="main_pic"></textarea>
+  <span *ngIf="newBlogForm.controls['main_pic'].invalid && newBlogForm.controls['main_pic'].touched">
+    <span *ngIf="newBlogForm.controls['main_pic'].errors['required']">main_pic' is required</span>
+  </span>
+  <br><br>
+
+  <label for="">Author name :</label> <br>
+  <textarea name="author_name" id="author_name" cols="50" rows="2" formControlName="author_name"></textarea>
+  <span *ngIf="newBlogForm.controls['author_name'].invalid && newBlogForm.controls['author_name'].touched">
+    <span *ngIf="newBlogForm.controls['author_name'].errors['required']">author_name' is required</span>
+  </span>
+  <br><br>
+
+  <label for="">Author's pic link :</label> <br>
+  <textarea name="author_pic" id="author_pic" cols="50" rows="2" formControlName="author_pic"></textarea>
+  <span *ngIf="newBlogForm.controls['author_pic'].invalid && newBlogForm.controls['author_pic'].touched">
+    <span *ngIf="newBlogForm.controls['author_pic'].errors['required']">author_pic' is required</span>
+  </span>
+  <br><br>
+
+  <label for="">Duration (in minutes) :</label> <br>
+  <input type="number" name="duration" formControlName='duration'>
+  <span *ngIf="newBlogForm.controls['duration'].invalid && newBlogForm.controls['duration'].touched">
+    <span *ngIf="newBlogForm.controls['duration'].errors['required']">duration' is required</span>
+  </span>
+  <br><br>
+
+  <label for="">Blog's Main Content :</label> <br>
+  <textarea name="body_content" id="body_content" cols="50" rows="2" formControlName="body_content"></textarea>
+  <span *ngIf="newBlogForm.controls['body_content'].invalid && newBlogForm.controls['body_content'].touched">
+    <span *ngIf="newBlogForm.controls['body_content'].errors['required']">body_content' is required</span>
+  </span>
+  <br><br>
+
+  <input type="submit" value="Post Blog" [disabled]="!newBlogForm.valid">
+  
+</form>
+
+
