@@ -1,15 +1,21 @@
 <!-- <p>login works!</p> -->
 <br>
-<form action="submit" class="loginForm">
-  <label for="email_id">Enter Email:</label> <br>
-  <input type="text" placeholder="akash@email.com" id="email_id">
-  <br>
-  <br>
+<form (submit)="onFormSubmit()" [formGroup]="loginForm" class="loginForm">
 
-  <label for="password">Enter Password:</label> <br>
-  <input type="text" placeholder="akash@email.com" id="****">
+  <label for="email_id">Enter Email:</label> <br>
+  <input type="email" placeholder="akash@email.com" id="email_id" name="email" formControlName="email">
+  <span *ngIf="loginForm.controls['email'].invalid && loginForm.controls['email'].touched">
+    <span *ngIf="loginForm.controls['email'].errors['required']">Email is required</span>
+  </span>
   <br><br>
 
-  <button type="submit">Submit</button>
+  <label for="password">Enter Password:</label> <br>
+  <input type="password" placeholder="akash@email.com" name="password" formControlName="password">
+  <span *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].touched">
+    <span *ngIf="loginForm.controls['password'].errors['required']">Password is required</span>
+  </span>
+  <br><br>
+
+  <input type="submit" value="login" [disabled]="!loginForm.valid">
   
 </form>
