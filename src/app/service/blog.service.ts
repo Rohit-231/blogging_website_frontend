@@ -63,7 +63,7 @@ export class BlogService {
     return this.http.get<any>(this.getUserApi+user_id);
   }
 
-  postNewBlog(blogObj:Object):Observable<any>{
-    return this.http.post<any>(this.postNewBlogApi,blogObj);
+  postNewBlog(blogObj:Object):Observable<Blog>{
+    return this.http.post<Blog>(this.postNewBlogApi,blogObj);
   }
 }

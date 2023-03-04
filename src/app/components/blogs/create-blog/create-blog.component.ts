@@ -12,7 +12,7 @@ import { BlogService } from 'src/app/service/blog.service';
 export class CreateBlogComponent implements OnInit {
 
   newBlogForm:FormGroup;
-  newBlog:object;
+  newBlog:Blog;
 
   title:string;
   main_pic:string;
@@ -38,12 +38,12 @@ export class CreateBlogComponent implements OnInit {
     console.log(this.newBlogForm.value.title);
     this.title=this.newBlogForm.value.title;
     this.newBlog={
-      title:this.title,
-      main_pic:this.main_pic,
-      author_name:this.author_name,
-      author_pic:this.author_pic,
-      duration:this.duration,
-      body_content:this.body_content
+      title:this.newBlogForm.value.title,
+      main_pic:this.newBlogForm.value.main_pic,
+      author_name:this.newBlogForm.value.author_name,
+      author_pic:this.newBlogForm.value.author_pic,
+      duration:this.newBlogForm.value.duration,
+      body_content:this.newBlogForm.value.body_content
     }
 
     this.blogService.postNewBlog(this.newBlog).subscribe(data=>{
